@@ -87,7 +87,7 @@ const createBlog = (blog) => {
                     <a href="#" class="h4">${data.author}</a>
 
                     <p class="text-sm">
-                      <time datetime="2022-01-17">Dec 9, 2022</time>
+                      <a class="footer-link" href="./blog.html?id=${data.id}">Read here</a>
                       <span class="separator"></span>
                       <ion-icon name="time-outline"></ion-icon>
                       <time datetime="PT3M">1 min</time>

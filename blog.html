@@ -115,18 +115,18 @@
 
         <div class="left">
 
-          <h1 class="h1">
+          <h1 class="h1 hero-title">
             Hi, I'm <b>Julia&nbsp;Walker</b>.
             <br>Web Developer
           </h1>
 
-          <p class="h3 mb-2 ">
+          <p class="h3 mb-2 hero-url">
             Specialized in <abbr title="Accessibility">a11y</abbr>
             and Core Web Vitals
           </p>
 
           <div class="btn-group">
-            <a href="#" class="btn btn-primary">Contact Me</a>
+            <a href="#" class="hero-author btn btn-primary">Contact Me</a>
           </div>
 
         </div>
@@ -151,7 +151,7 @@
 
         <div class="blog">
 
-          <h2 class="h2">Latest Blog Post</h2>
+          <h2 class="h2 hero-title"></h2>
 
           <div class="blog-card-group">
 
@@ -175,9 +175,9 @@
 
           <div class="topics">
 
-            <h2 class="h2">Links</h2>
+            <h2 class="h2">Comments</h2>
 
-            <div class="topic-container">
+            <div class="comment-container">
               <!-- Blog titles here -->
             </div>
 
@@ -186,11 +186,16 @@
 
           <div class="tags">
 
-            <h2 class="h2">Authors</h2>
+            <h2 class="h2">Write a<br/> comment</h2>
 
-            <div class="wrapper author_wrapper">
+            <div class="wrapper comment_wrapper">
 
-              <!-- Authors go here -->
+              <form class="form-comment" id="make-comment" method="post">
+                <input type="text" id="name" name="name" placeholder="| Enter your fullname" class="form-comment-input" required/>
+                <input type="text" id="title" name="title" placeholder="| Enter a comment" class="form-comment-input" required/>
+                <input type="file" id="image" name="image" value=" Click here choose image" placeholder="| kindly choose image here" class="form-comment-input" required/>
+                <input type="Submit" value="make comment" class="form-comment-input form-comment-submit"/>
+              </form>
               
 
             </div>
@@ -334,11 +339,10 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/hero.js" type="module"></script>
-  <script src="./assets/js/blog.js" type="module"></script>
-  <script src="./assets/js/url.js" type="module"></script>
-  <script src="./assets/js/author.js" type="module"></script>
-  <!-- <script src="./assets/js/slide.js" defer></script> -->
+  <script src="./assets/js/blogItem.js" type="module"></script>
+  <script src="./assets/js/commentItem.js" type="module"></script>
+  <script src="./assets/js/submitComment.js" type="module"></script>
+  
 
   <!--
     - ionicon link
