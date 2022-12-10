@@ -888,6 +888,29 @@ mr-2{
   .hero-container { max-width: 800px; }
   .hero-image { max-width: 800px; }
 
+  .form-comment-input{
+    background-color: var(--action-primary);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    border: none;
+    outline:transparent;
+    width: 100%;
+  }
+  
+  .form-comment-submit{
+    background-color: var(--accent) ;
+  }
+  
+  .form-comment-input:not(:last-child){
+    margin-bottom: 1rem;
+  }
+  
+  .form-comment-input::placeholder{
+    color: white;
+    opacity: 0.6;
+  }
+
 }
 
 
