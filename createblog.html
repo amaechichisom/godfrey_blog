@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godfrey's Blog</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://res.cloudinary.com/devgodfrey/image/upload/v1661191495/my_character_2_wo8imv.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="/" class="h1">
+          Godfrey's Blog 
+        </a>
+
+        <div class="btn-group">
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="nav-link">Blog</a>
+            </li>
+
+
+          </ul>
+
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#blog" class="nav-link">Blog</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="blog-hero bg-white ">
+
+      <div class="hero-image relative ">
+
+        <div class="left">
+
+          <h1 class="h1 hero-title">
+            Create a Blog Post
+          </h1>
+
+          
+        </div>
+
+
+        
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="main">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+
+          <h2 class="h2 hero-title"> Write your post</h2>
+
+          <form class="form-comment wrapper" id="make-post" method="post">
+
+            <input type="text" id="name" name="name" placeholder="| Enter your fullname" class="form-comment-input" required/>
+            
+            <textarea class="form-comment-input" rows="9" required id="title" name="title" placeholder="| Enter a post text">
+
+            </textarea>
+            <input type="file" id="image" name="image" value=" Click here choose image" placeholder="| kindly choose image here" class="form-comment-input" required/>
+            <input type="Submit" value="make post" class="form-comment-input form-comment-submit"/>
+
+          </form>
+          
+
+        </div>
+
+
+
+
+
+        <!--
+          - ASIDE
+        -->
+
+        <div class="aside">
+
+
+          <div class="contact">
+
+            <h2 class="h2">Godfrey's Blog</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Specified to suit mockapi structure
+              </p>
+
+              <ul class="social-link">
+
+                <li>
+                  <a href="https://www.linkedin.com/in/amaechi-godfrey-chisom/" class="icon-box discord">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://twitter.com/LegendAmaechi" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/amaechichisom?tab=repositories" class="icon-box facebook">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="newsletter">
+
+            <h2 class="h2">Get Godfrey's Latest</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Get updates in real time with the blog
+              </p>
+
+              <form action="#">
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="https://res.cloudinary.com/devgodfrey/image/upload/v1661191495/my_character_2_wo8imv.png" alt="DevBlog's Logo" width="100" height="100" class="logo-light">
+          <img src="https://res.cloudinary.com/devgodfrey/image/upload/v1661191495/my_character_2_wo8imv.png" alt="DevBlog's Logo" width="100" height="100" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          Godfrey is a Lead Frontend Developer on several projects
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="https://www.linkedin.com/in/amaechi-godfrey-chisom/" class="icon-box discord footer-link">
+              <ion-icon name="logo-linkedin"></ion-icon><span class="mr-2"> | </span>
+              linkedin
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/LegendAmaechi" class="icon-box twitter footer-link">
+              <ion-icon name="logo-twitter"></ion-icon><span class="mr-2"> | </span>
+              Twitter
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/amaechichisom?tab=repositories" class="icon-box facebook footer-link">
+              <ion-icon name="logo-github" ></ion-icon><span class="mr-2"> | </span>
+              <p>Github</p>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2022 <a href="#">Godfrey:codexwizard</a>
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/submitPost.js"></script>
+  
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
