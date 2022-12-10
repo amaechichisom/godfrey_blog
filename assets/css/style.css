@@ -630,6 +630,29 @@ mr-2{
 
 .copyright a:hover { text-decoration: underline; }
 
+.form-comment-input{
+  background-color: var(--action-primary);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  border: none;
+  outline:transparent;
+  width: 100%;
+}
+
+.form-comment-submit{
+  background-color: var(--accent) ;
+}
+
+.form-comment-input:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.form-comment-input::placeholder{
+  color: white;
+  opacity: 0.6;
+}
+
 
 
 
@@ -683,6 +706,29 @@ mr-2{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form-comment-input{
+  background-color: var(--action-primary);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  border: none;
+  outline:transparent;
+  width: 100%;
+}
+
+.form-comment-submit{
+  background-color: var(--accent) ;
+}
+
+.form-comment-input:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.form-comment-input::placeholder{
+  color: white;
+  opacity: 0.6;
 }
 
 
