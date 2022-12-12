@@ -36,7 +36,7 @@ form.addEventListener("submit", function (event) {
         console.log(data)
         alert(formData.get("name") + " just commented: " +formData.get("comment"))
         location.reload();
-    })
+    }).catch(err => alert(err))
     
 });
 

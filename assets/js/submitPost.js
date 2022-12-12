@@ -38,8 +38,8 @@ form.addEventListener("submit", function (event) {
     }).then((data) => {
         console.log(data)
         alert(dataForm.author + " just wrote the following post: " + dataForm.title)
-        location.reload();
-    })
+        window.location.replace("/");
+    }).catch(err => alert(err))
     
 });
 
