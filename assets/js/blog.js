@@ -60,17 +60,17 @@ const createBlog = (blog) => {
     blogSection.innerHTML += `
     <div class="blog-card" id="blog-card">
 
-              <div class="blog-card-banner">
+              <a href="./blog.html?id=${data.id}" class="blog-card-banner">
                 <img src=${data.avatar} alt=${data.author}
                   width="150" class="blog-banner-img">
-              </div>
+              </a>
 
               <div class="blog-content-wrapper">
 
-                <button class="blog-topic text-tiny">${data.id}</button>
+                <a href="./blog.html?id=${data.id}" class="blog-topic text-tiny">${data.id}</a>
 
                 <h3>
-                  <a href="#" class="h3">
+                  <a href="./blog.html?id=${data.id}" class="h3">
                     ${data.title}
                   </a>
                 </h3>
@@ -79,12 +79,12 @@ const createBlog = (blog) => {
 
                 <div class="wrapper-flex">
 
-                  <div class="profile-wrapper">
+                  <a href="./blog.html?id=${data.id}" class="profile-wrapper">
                     <img src=${data.avatar} alt=${data.author} width="50">
-                  </div>
+                  </a>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">${data.author}</a>
+                    <a href="./blog.html?id=${data.id}" class="h4">${data.author}</a>
 
                     <p class="text-sm">
                       <a class="footer-link" href="./blog.html?id=${data.id}">Read here</a>

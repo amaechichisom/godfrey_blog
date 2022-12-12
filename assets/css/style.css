@@ -112,6 +112,15 @@ button {
   cursor: pointer;
 }
 
+.delete_post{
+  text-align: center;
+  background-color: var(--accent);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;;
+}
+
 html {
   font-family: "Inter", sans-serif;
   font-size: var(--fs-base); /* base font-size (0.85rem = 13.6px) */

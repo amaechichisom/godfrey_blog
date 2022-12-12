@@ -6,12 +6,12 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 const blogSection = document.querySelector('.hero-image');
 
 const singleBlogFuntion = () => {
-    fetch(`https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1//news/${params.id}`).then((data) => {
+    fetch(`https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/${params.id}`).then((data) => {
     return data.json()
     }).then((blog) => {
         
         createSingleBlog(blog)
-    })
+    }).catch(err =>{alert(err)})
 
 }
 
@@ -35,23 +35,15 @@ const createSingleBlog = (blog) =>{
     heroAuthor.innerHTML = data.author;
 }
 
-// const createSingleBlog = (blog) => {
-//     let data = blog;
-//     blogSection.innerHTML += `
-//     <div class="left">
 
-//           <h1 class="h1 hero-title">
-//             ${data.title}
-//           </h1>
+const deletePost = document.querySelector('#delete_post');
 
-//           <p class="h3 mb-2 hero-url">
-//             ${data.url}
-//           </p>
-
-//           <div class="btn-group">
-//             <a href="#" class="hero-author btn btn-primary">By: ${data.author}</a>
-//           </div>
-
-//     </div>
-//     `;
-// }
+deletePost.addEventListener('click', ()=>{
+    fetch(`https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/${params.id}`, {
+        method: 'delete',
+    }).then((data) => {
+        alert("Post deleted")
+        console.log(data.json)
+        window.location.replace("/");
+        })
+    }).catch(err =>{alert(err)})
