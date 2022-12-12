@@ -19,12 +19,18 @@ form.addEventListener("submit", function (event) {
     formData.append("avatar", form.elements["image"].value)
     formData.append("newsId", params.id.toString())
 
+    const dataForm = {
+        name: form.elements["name"].value.trim(),
+        comment: form.elements["title"].value.trim(),
+        avatar: form.elements["image"].value.trim(),
+        newsId: params.id.toString(),
+      };
+
     fetch(`https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/${params.id}/comments`, {
         method: 'post',
-        body: formData,
+        body: JSON.stringify(dataForm),
         headers: {
-            'Content-Type': 'multipart/form-data'
-            // 'Content-Type': 'application/x-www-form-urlencoded',
+            "Content-Type": "application/json",
         },
     }).then((data) => {
         console.log(data)
