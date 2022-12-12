@@ -45,5 +45,5 @@ deletePost.addEventListener('click', ()=>{
         alert("Post deleted")
         console.log(data.json)
         window.location.replace("/");
-        })
-    }).catch(err =>{alert(err)})
+        }).catch(err =>{alert(err)})
+    })
