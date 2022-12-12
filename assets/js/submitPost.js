@@ -15,17 +15,18 @@ form.addEventListener("submit", function (event) {
 
     const formData = new FormData();
 
-    formData.append("name", form.elements["name"].value)
+    formData.append("author", form.elements["name"].value)
+    formData.append("avatar", form.elements["image"].value)
     formData.append("title", form.elements["title"].value)
     formData.append("url", form.elements["url"].value)
-    formData.append("image", form.elements["image"].value)
+    
 
     fetch(`https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news`, {
         method: 'post',
         body: formData,
     }).then((data) => {
         console.log(data)
-        alert(formData.get("name") + " just wrote the following post: " +formData.get("title"))
+        alert(formData.get("author") + " just wrote the following post: " +formData.get("title"))
         location.reload();
     })
     
